@@ -1,0 +1,6 @@
+// api/build.gradle
+dependencies {
+    compile project(':core')
+}
+
+println('build member project')

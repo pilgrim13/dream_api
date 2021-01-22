@@ -1,0 +1,2 @@
+// core/build.gradle
+println('build core project')

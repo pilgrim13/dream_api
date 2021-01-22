@@ -1,2 +1,4 @@
 rootProject.name = 'dream_api'
 
+include 'core', 'member'
+

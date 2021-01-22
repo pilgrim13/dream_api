@@ -1,14 +1,16 @@
-plugins {
-    id 'java'
+// build.gradle
+def javaProjects = [project(':core'), project(':member')]
+def bootProjects = [project(':member')]
+
+allprojects {
+    println('all projects tasks')
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
-
-repositories {
-    mavenCentral()
+configure(javaProjects) {
+    apply plugin: 'java'
+    println('java projects tasks')
 }
 
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+configure(bootProjects) {
+    println('boot projects tasks')
 }
